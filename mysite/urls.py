@@ -17,6 +17,6 @@ from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^$', admin.site.urls)
+    url(r'^$', 'aboutme.views.index', name='index'),
+    url(r'^admin/', admin.site.urls)
 ]
