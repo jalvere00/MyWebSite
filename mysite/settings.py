@@ -25,7 +25,7 @@ SECRET_KEY = 'x_m72amr&h)b_p6(tnjd@02p$4v69zjolunii33=&zyh@r^5s6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['jameelalverez.com', 'www.jameelalverez.com']
 
 
 # Application definition
@@ -78,8 +78,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'jameeldj',
-        'USER':'jameelpg',
+        'NAME': 'djangodb',
+        'USER':'dj_user',
         'PASSWORD':'sdr001',
         'HOST':'localhost',
         'PORT':'',
@@ -129,8 +129,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
+    
 ]
