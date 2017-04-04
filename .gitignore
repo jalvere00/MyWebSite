@@ -2,5 +2,5 @@
 *.pyc
 /log
 mydatabase
-setting.py
+settings.py
 
